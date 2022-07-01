@@ -5,7 +5,7 @@
  *
  * variable assignment and type
  *
- * for loop function 
+ * for-loop function 
  *
  * putchar function
  *
