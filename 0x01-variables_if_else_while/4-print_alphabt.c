@@ -5,7 +5,9 @@
  *
  * variable assignment and type
  *
- * forloop function
+ * while function
+ *
+ * else if function
  *
  * putchar function
  *
@@ -13,11 +15,25 @@
  */
 int main(void)
 {
-	char alph = 'a'
+	char alph = 'a';
 
-	for (alph = 'a'; alph <= 'z'; alph++;)
-		putchar(alph);
-			putchar('\n');
+	while (alph <= 'z')
+	{
+		if (alph == 'q')
+		{
+			alph++;
+		}
+		else if (alph == 'e')
+		{
+			alph++;
+		}
+		else
+		{
+			putchar(alph);
+			alph++;
+		}
+	}
+	putchar('\n');
 	return (0);
 }
 	
