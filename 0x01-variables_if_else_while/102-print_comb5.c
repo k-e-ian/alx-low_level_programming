@@ -28,11 +28,11 @@ int main(void)
 				putchar((z / 10) + '0');
 				putchar((z % 10) + '0');
 
-					if ((a != 98) || (z != 99))
-					{
-						putchar(',');
-						putchar(' ');
-					}
+				if ((a != 98) || (z != 99))
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
