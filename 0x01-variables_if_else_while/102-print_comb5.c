@@ -20,7 +20,7 @@ int main(void)
 	{
 		for (z = 0; z <= 99; z++)
 		{
-			if (a < z) 
+			if (a < z)
 			{
 				putchar((a / 10) + '0');
 				putchar((a % 10) + '0');
