@@ -5,8 +5,7 @@
  *
  * variable assignment and type
  *
- * for-loop function 
- *
+ * for loop function
  * putchar function
  *
  * Return: Always 0 (Success)
