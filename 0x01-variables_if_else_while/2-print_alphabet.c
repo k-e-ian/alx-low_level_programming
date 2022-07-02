@@ -5,10 +5,10 @@
  *
  * variable assignment and type
  *
- * for-loop function 
+ * forloop function
  *
  * putchar function
- *
+ * 
  * Return: Always 0 (Success)
  */
 int main(void)
