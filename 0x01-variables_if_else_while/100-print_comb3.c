@@ -23,12 +23,12 @@ int main(void)
 			if ((a < z) & (z <= '9'))
 			{
 				putchar(a);
-					putchar(z);
-						if ((z < '9') | (a < '8'))
-						{
-							putchar(',');
-								putchar(' ');
-						}
+				putchar(z);
+					if ((z < '9') | (a < '8'))
+					{
+						putchar(',');
+						putchar(' ');
+					}
 			}
 		}
 	}

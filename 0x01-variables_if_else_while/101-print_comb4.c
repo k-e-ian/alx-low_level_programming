@@ -3,11 +3,10 @@
 /**
  * main - Entry mode
  *
- * variable assignment 
+ * variable assignment
  *
  * if function to fit description
  * putchar function
- * 
  * Return: Always 0 (Success)
  */
 int main(void)

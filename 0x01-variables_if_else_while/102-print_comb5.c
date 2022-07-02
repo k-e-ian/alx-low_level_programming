@@ -22,17 +22,17 @@ int main(void)
 		{
 			if (a < z) 
 			{
-				putchar((a / 10)+ '0');
-					putchar((a % 10) + '0');
-						putchar(' ');
-							putchar((z / 10) + '0');
-								putchar((z % 10) + '0');
+				putchar((a / 10) + '0');
+				putchar((a % 10) + '0');
+				putchar(' ');
+				putchar((z / 10) + '0');
+				putchar((z % 10) + '0');
 
-								if ((a != 98) || (z != 99))
-									{
-										putchar(',');
-											putchar(' ');
-									}
+					if ((a != 98) || (z != 99))
+					{
+						putchar(',');
+						putchar(' ');
+					}
 			}
 		}
 	}
