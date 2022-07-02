@@ -5,17 +5,18 @@
  *
  * variable assignment 
  *
- * wrtes all descriptions
- *
- * Return 0 for success
+ * if function to fit description
+ * putchar function
+ * 
+ * Return: Always 0 (Success)
  */
-int main (void)
+int main(void)
 {
 	int a, b, c;
 
 	for (a = '0'; a <= '9'; a++)
 	{
-		for ( b = '0'; b <= '9'; b++)
+		for (b = '0'; b <= '9'; b++)
 		{
 			for (c = '0'; c <= '9'; c++)
 			{
@@ -33,7 +34,7 @@ int main (void)
 				}
 			}
 		}
-			
+		
 	}
 	putchar('\n');
 	return (0);
