@@ -1,13 +1,23 @@
 #include <stdio.h>
-
+#include "main.h"
 
 /**
+ * print_last_digit - print last digit function
  *
+ * @n: integer
  *
+ * if statement
  *
+ * Return: integer
  */
-int print_last_digit(int r)
+int print_last_digit(int n)
 {
-	putchar((r) % 10);
-	return ((r) % 10);
+	int printlastdigit = (n % 10);
+
+	if (printlastdigit < 0)
+	{
+		printlastdigit = (-1 * printlastdigit);
+	}
+	_putchar(printlastdigit + '0');
+	return (printlastdigit);
 }
