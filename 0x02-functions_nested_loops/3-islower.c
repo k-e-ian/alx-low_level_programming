@@ -3,7 +3,7 @@
 /**
  * _islower - lower/upper function
  *
- * int c - parameter
+ * @c: integer
  *
  * if statement
  *
