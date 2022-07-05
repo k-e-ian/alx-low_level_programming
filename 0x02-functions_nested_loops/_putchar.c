@@ -1,13 +1,11 @@
-#include "main.h"
 #include <stdio.h>
-
+#include "main.h"
 /**
- * main - check the code
+ * _putchar function
  *
- * Return: Always 0 (Success)
+ * Return: putchar(char c)
  */
 int _putchar(char c)
 {
-	putchar(char);
-	return (0);
+	return (putchar(c));
 }
