@@ -1,37 +1,47 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
+ * print_to_98 - function
  *
+ * @n: integer
  *
+ * if statement
  *
+ * for loop
+ *
+ * putchar function
  */
 void print_to_98(int n)
 {
-	n = 0;
-
-	if (n == 0)
+	if (n == '0')
 	{
-		for (n = '0'; n <= 98; n++)
+		for (n = 98; n <= 98; n++)
 		{
 			_putchar(n);
-		}
-		for  (n = 98; n <= 98; n++)
-		{
-			_putchar(n);
-		}
-		for (n = 111; n >= 98; n--)
-		{
-			_putchar(n);
-		}
-		for (n = 81; n <= 98; n++)
-		{
-			_putchar(n);
-		}
-		for (n = -10; n <= 98; n++)
-		{
-			_putchar(n);
+			if (n <= 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 	}
-	_putchar(',');
-	_putchar(' ');
+	else if (n > 98)
+	{
+		while (n >= 98)
+		{
+			_putchar(n);
+			if (n != 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+			n--;
+		}
+	}
+	else
+	{
+		putchar('n');
+	}
+	putchar('\n');
 }
