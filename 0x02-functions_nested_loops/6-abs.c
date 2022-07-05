@@ -4,25 +4,11 @@
 /**
  * _abs - absolute value of an integer
  *
- * integer
+ * @n: integer
  *
- * Return: 0
+ * Return: integer
  */
-int _abs(int)
+int _abs(int n)
 {
-	int num;
-
-	if (num > '0')
-	{
-		_putchar(num);
-	}
-	else if (num == 0)
-	{
-		_putchar(num);
-	}
-	else if (num < '0')
-	{
-		putchar(num);
-	}
-	return (0);
+	return (n * ((n > 0) - (n < 0)));
 }
