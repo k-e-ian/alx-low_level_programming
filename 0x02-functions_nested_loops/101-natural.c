@@ -8,14 +8,8 @@
  */
 int main(void)
 {
-	int x, y, n;
-
-	x = 3;
-	y = 5;
-	n = 1024;
-
-	int sum = 0;
-	int sum2 = 0;
+	int sum;
+	int sum2;
 	int sum3 = (3 * 5 * (1024 / (3 * 5)) * ((1024 / (3 * 5)) + 1) / 2);
 
 	sum = 3 * ((1024 / 3) * ((1024 / 3) + 1) / 2);
