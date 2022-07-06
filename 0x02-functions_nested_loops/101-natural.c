@@ -1,20 +1,28 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include "main.h"
 /**
- * main - Entry point
+ * main - natural numbers multiples of 3 or 5 to 1024
  *
- * Return: Always 0 (Success)
+ * Return: always 0
  */
 int main(void)
 {
-	int sum;
-	int sum2;
-	int sum3 = (3 * 5 * (1024 / (3 * 5)) * ((1024 / (3 * 5)) + 1) / 2);
+	int s, t, f, tm, fm;
 
-	sum = 3 * ((1024 / 3) * ((1024 / 3) + 1) / 2);
-	sum2 = 5 * ((1024 / 5) * ((1024 / 5) + 1) / 2);
+	s = 0;
 
-	printf("%d\n", (sum + sum2 - sum3));
+	for (t = 0; t <= (1024 / 3); t++)
+	{
+	tm = 3 * t;
+	s = s + tm;
+	}
+	for (f = 0; f <= (1024 / 5); f++)
+	{
+		if (!(f % 3 == 0))
+		{
+			fm = 5 * f;
+			s = s + fm;
+		}
+	}
+	printf("%i\n", s);
 	return (0);
 }
