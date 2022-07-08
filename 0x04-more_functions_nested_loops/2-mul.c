@@ -2,11 +2,12 @@
 
 /**
  * mul - multiplication function
- * 
+ *
  * @a: integer
  *
  * @b: integer
- * Return: 1 or 0
+ *
+ * Return: result of mul
  */
 int mul(int a, int b)
 {
