@@ -8,6 +8,8 @@
  * @src: source variable
  *
  * @n: integer to carry nth value
+ *
+ * Return: copied destination file
  */
 char *_strncpy(char *dest, char *src, int n)
 {
