@@ -2,18 +2,20 @@
 #include <stdio.h>
 
 /**
+ * main -Entry mode
  *
+ * @argc: argument count
  *
+ * @argv: argument vector
  *
- *
- *
+ * Return: Always 0
  */
 int main(int argc, char **argv)
 {
 	int index = 1;
 	int sum = 0;
 	int count = 0;
-	
+
 	for ( ; index < argc; index++)
 	{
 		for ( ; argv[index][count]; count++)
