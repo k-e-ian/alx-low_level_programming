@@ -1,17 +1,18 @@
 #include <stdio.h>
 
 /**
+ * main -Entry mode
  *
+ * @argc: argument count
  *
+ * @argv: argument vector
+ *
+ * Return: Always 0
  */
 int main(int argc, char **argv)
 {
-	int index = 0;
 	(void)argv;
 
-	for ( ; index < argc; index++)
-	{
-		printf("%d\n", index);
-	}
+	printf("%d\n", argc - 1);
 	return (0);
 }

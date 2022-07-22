@@ -1,8 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
+ * main -Entry mode
  *
+ * @argc: argument count
  *
+ * @argv: argument pointer
+ *
+ * Return: Always 0
  */
 int main(int argc, char **argv)
 {
