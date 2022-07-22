@@ -12,21 +12,16 @@
  */
 int main(int argc, char **argv)
 {
-	int mul = 1;
-	int index = 1;
+	int mul, num1, num2;
 
-	if (argc > 1)
-	{
-		for ( ; index < argc; index++)
-		{
-			mul *= atoi(argv[index]);
-		}
-		printf("%d\n", mul);
-	}
-	else
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+	mul = num1 * num2;
+	printf("%d\n", mul);
 	return (0);
 }
