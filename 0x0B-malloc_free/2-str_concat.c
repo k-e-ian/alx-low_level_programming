@@ -12,21 +12,15 @@
  */
 char *str_concat(char *s1, char *s2)
 {
+	int size1 = 0, size2 = 0, index1 = 0, index2 = 0, index3 = 0, sizesum;
 	char *concat;
-	int size1 = 0;
-	int size2 = 0;
-	int index1 = 0;
-	int index2 = 0;
-	int sizesum;
-	int index3 = 0;
-	char *empty = "";
-	
-	if (s1 == 0)
-		*s1 = *empty;
-	if (s2 == 0)
-		*s2 = *empty;
 
-	for( ;s1[index1] != '\0'; index1++)
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
+	for ( ; s1[index1] != '\0'; index1++)
 	{
 		size1++;
 	}
