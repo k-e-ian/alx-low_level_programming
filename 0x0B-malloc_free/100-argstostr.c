@@ -12,15 +12,15 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int count = 0, index = 0, size = 0, index1 = 0, index2 = 0;
-	char *concat, *word;
+	int count, index, size = ac, index2;
+	char *concat;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	for ( ; index1 < ac; index1++)
+	for (count = 0; count < ac; count++)
 	{
-		for ( ; av[index1][index2]; index2++)
+		for (index2 = 0; av[count][index2]; index2++)
 			size++;
 	}
 
@@ -29,17 +29,15 @@ char *argstostr(int ac, char **av)
 	if (concat == NULL)
 		return (NULL);
 
-	for ( ; count < ac; count++)
+	index = 0;
+
+	for (count = 0; count < ac; count++)
 	{
-		word = av[count];
-		while (*word)
-		{
-			concat[index] = *word;
-			word++;
-			index++;
-		}
+		for (index2 = 0 ; av[count][index2]; index2++)
+			concat[index++] = av[count][index2];
+			
 		concat[index++] = '\n';
 	}
-	concat[index] = '\0';
+	concat[size] = '\0';
 	return (concat);
 }
