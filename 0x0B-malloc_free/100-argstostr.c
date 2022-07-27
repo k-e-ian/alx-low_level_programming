@@ -35,7 +35,7 @@ char *argstostr(int ac, char **av)
 	{
 		for (index2 = 0 ; av[count][index2]; index2++)
 			concat[index++] = av[count][index2];
-			
+
 		concat[index++] = '\n';
 	}
 	concat[size] = '\0';
