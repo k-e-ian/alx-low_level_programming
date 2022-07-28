@@ -11,11 +11,11 @@
 void *malloc_checked(unsigned int b)
 {
 	void *checker;
-
 	b += b;
-	checker	= malloc(sizeof(checker) * b);
 
-	if (!checker)
+	checker = malloc(sizeof(checker) * b);
+
+	if (checker == NULL)
 		exit(98);
 
 	return (checker);
