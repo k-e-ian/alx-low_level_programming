@@ -49,8 +49,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	for ( ; s2[index3] != '\0' && index3 < n; index2++, index3++)
 	{
-		if (n >= index3)
-			concated[index2] = *s2;
 		concated[index2] = s2[index3];
 	}
 	concated[index2] = '\0';
