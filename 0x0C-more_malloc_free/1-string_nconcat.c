@@ -18,6 +18,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *concated;
 	unsigned int index, index1, index2, index3;
 
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
 	for (index = 0; s1[index] != '\0'; index++)
 	{
 		size1++;
@@ -28,12 +33,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	sumsize = size1 + size2;
 
-	concated = malloc(sizeof(char) * sumsize + 1);
+	concated = malloc(sizeof(char) * (sumsize + 1));
 
 	if (concated == NULL)
 		return (NULL);
-	if (s1 == NULL || s2 == NULL)
-		concated = "";
 
 	index2 = 0;
 	index3 = 0;
