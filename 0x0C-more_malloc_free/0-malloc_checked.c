@@ -10,9 +10,12 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	void *checker = malloc(sizeof(checker) * b);
+	void *checker;
 
-	if (checker == NULL)
+	b += b;
+	checker	= malloc(sizeof(checker) * b);
+
+	if (!checker)
 		exit(98);
 
 	return (checker);
