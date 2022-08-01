@@ -2,6 +2,11 @@
 #include "dog.h"
 #include <stdlib.h>
 
+/**
+ * _strlen - function to get string length
+ * @str: pointer to string to check length
+ * Return: length
+ */
 int _strlen(char *str)
 {
 	int len = 0;
@@ -51,7 +56,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	newd->name = malloc(sizeof(char) * (_strlen(name) + 1));
 	if (newd->name == NULL)
 		return (NULL);
-	
+
 	newd->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 	if (newd->owner == NULL)
 		return (NULL);
