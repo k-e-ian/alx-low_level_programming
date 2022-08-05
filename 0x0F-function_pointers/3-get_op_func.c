@@ -2,7 +2,7 @@
 #include "3-calc.h"
 
 /**
- * get_op_function - function selector
+ * get_op_func - function selector
  * @s: the operator as argument
  * Return: pointer to right function
  */
