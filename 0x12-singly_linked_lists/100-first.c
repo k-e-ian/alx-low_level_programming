@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * before_start_up - function that executes before the main function is executed.
+ * before_start_up - function that executes before main() function is executed.
  *
  */
 void before_start_up(void)
