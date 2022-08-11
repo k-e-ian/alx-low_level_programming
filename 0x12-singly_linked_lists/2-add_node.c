@@ -1,9 +1,11 @@
 #include "lists.h"
+#include <stdlib.h>
+#include <string.h>
 
 /**
  * add_node -  adds a new node at the beginning of a list_t list
  * @head: A pointer to the head of the list_t list
- * @string: The string to be added to the list_t list
+ * @str: The string to be added to the list_t list
  * Return: the address of the new element, or NULL on failure
  */
 list_t *add_node(list_t **head, const char *str)
@@ -25,9 +27,9 @@ list_t *add_node(list_t **head, const char *str)
 	for (index = 0; str[index];)
 		index++;
 
-	new_node -> str = dup;
-	new_node -> len = index;
-	new_node -> next = *head;
+	new_node->str = dup;
+	new_node->len = index;
+	new_node->next = *head;
 
 	*head = new_node;
 
