@@ -1,18 +1,11 @@
 #ifndef LISTS_H
 #define LISTS_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdarg.h>
-#include <unistd.h>
 #include <stddef.h>
-#include <string.h>
 
 int _putchar(char c);
 
 void before_start_up(void) __attribute__ ((constructor));
-
-size_t print_list(const list_t *h);
 
 /**
  * struct list_s - singly linked list
