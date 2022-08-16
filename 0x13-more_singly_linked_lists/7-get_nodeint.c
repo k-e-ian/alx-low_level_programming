@@ -2,7 +2,7 @@
 
 /**
  * get_nodeint_at_index - function that returns the nth node of a linked list
- * @head: pointer to head 
+ * @head: pointer to head
  * @index: is the index of the node, starting at 0
  * Return: the nth node of a linked list, or NULL if node doesn't exist
  */
