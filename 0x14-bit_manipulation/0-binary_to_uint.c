@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * binary_to_unit - function that converts binary to decimal
+ * binary_to_uint - function that converts binary to decimal
  * @b: pointer to string cointaining 1's and 0's
  * Return: decimal
  *
@@ -12,7 +12,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int dec = 0;
 	int bin = 1;
 
-	if (!b)
+	if (b == NULL)
 		return (0);
 
 	index = 0;
@@ -26,7 +26,6 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[index] != '0' && b[index] != '1')
 			return (0);
-			
 		dec += (b[index] - '0') * bin;
 		index--;
 		bin *= 2;
