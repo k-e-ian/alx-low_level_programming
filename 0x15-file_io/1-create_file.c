@@ -19,6 +19,12 @@ int create_file(const char *filename, char *text_content)
 
 	opEn = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 
+	if (opEn == -1)
+		return (-1);
+
+	while (text_content && text_content[fd])
+		fd++;
+
 	if (text_content == NULL)
 	{
 		close(opEn);
@@ -26,11 +32,8 @@ int create_file(const char *filename, char *text_content)
 	else
 		wrIte = write(opEn, text_content, fd);
 
-	if (opEn == -1 || wrIte == -1)
-	{
+	if (wrIte == -1)
 		return (-1);
-		write(STDOUT_FILENO, "fails", 6);
-	}
 
 	close(opEn);
 	return (1);
