@@ -23,7 +23,10 @@ int create_file(const char *filename, char *text_content)
 	opEn = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 
 	if (text_content == NULL)
+	{
 		close(opEn);
+		return (-1);
+	}
 	else
 		wrIte = write(opEn, text_content, fd);
 
