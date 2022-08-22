@@ -20,11 +20,12 @@ int create_file(const char *filename, char *text_content)
 			fd++;
 	}
 
-	if (!text_content)
-		opEn = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+	opEn = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 
-	opEn = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	wrIte = write(opEn, text_content, fd);
+	if (text_content == NULL)
+		close(opEn);
+	else
+		wrIte = write(opEn, text_content, fd);
 
 	if (opEn == -1 || wrIte == -1)
 	{
