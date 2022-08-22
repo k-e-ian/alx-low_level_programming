@@ -4,7 +4,6 @@
  * binary_to_uint - function that converts binary to decimal
  * @b: pointer to string cointaining 1's and 0's
  * Return: decimal
- *
  */
 unsigned int binary_to_uint(const char *b)
 {
