@@ -22,7 +22,6 @@ int create_file(const char *filename, char *text_content)
 	if (text_content == NULL)
 	{
 		close(opEn);
-		return (-1);
 	}
 	else
 		wrIte = write(opEn, text_content, fd);
@@ -30,6 +29,7 @@ int create_file(const char *filename, char *text_content)
 	if (opEn == -1 || wrIte == -1)
 	{
 		return (-1);
+		write(STDOUT_FILENO, "fails", 6);
 	}
 
 	close(opEn);
