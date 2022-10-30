@@ -23,7 +23,7 @@ typedef struct hash_node_s
 } hash_node_t;
 
 /**
- * struct hash_tables_s - Hash table data structure
+ * struct hash_table_s - Hash table data structure
  * @size: the array size
  * @array: an array of size @size
  * Each cell of this array is a pointer to ther first node of a linked list,
@@ -42,6 +42,8 @@ unsigned long int key_index(const unsigned char *key, unsigned long int size);
 char *hash_table_get(const hash_table_t *ht, const char *key);
 
 void hash_table_print(const hash_table_t *ht);
+
+void hash_table_delete(hash_table_t *ht);
 
 unsigned long int hash_djb2(const unsigned char *str);
 
